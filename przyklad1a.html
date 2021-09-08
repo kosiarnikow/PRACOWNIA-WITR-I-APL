@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>Przykład nr 1</title>
+    <script language="JavaScript">
+        function WinOpen_zebrowski() {
+            window.open("obraz.html", "okienko", "toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");
+        }
+    </script>
+</head>
+
+<body>
+
+
+    <ul>Poniżej zamieszczam wszystkie możliwe ustawienia okna:</ul>
+    <li>Directories - wartość no : ukrywa przyciski katalogów</li>
+    <li>Toolbar - wartość no: ukrywa standardowy pasek narzędzi</li>
+    <li>Height - wartość 280: ustawia wysokość okna naq 280</li>
+    <li>Width - wartość 160: ustawia szerokość okna na 160</li>
+    <li>Top - wartość 200 : ustawia położenie okna względem góry ekranu na 200</li>
+    <li>Left - wartość 200: ustawia położenie okna względem lewej strony ekranu na 200</li>
+
+    <br>
+    <br>
+
+
+    <form>
+        <input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen_zebrowski(' ')">
+    </form>
+</body>
+
+</html>
