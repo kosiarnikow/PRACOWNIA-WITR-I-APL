@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            textarea {
+        width: 60%;
+        height: 620px; 
+        }
+        </style>
+    </head>
+
+    <body>
+
+        przykład1a.html<br>
+        <textarea>
+            <html>
+
+<head>
+    <title>Przykład nr 1</title>
+    <script language="JavaScript">
+        function WinOpen_zebrowski() {
+            window.open("obraz.html", "okienko", "toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");
+        }
+    </script>
+</head>
+
+<body>
+
+    <br>
+    <br>
+
+
+    <form>
+        <input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen_zebrowski(' ')">
+    </form>
+</body>
+
+</html>
+        </textarea><br>
+        <br>
+        <br>
+        obraz.html<br>
+        <textarea>
+            <html>
+
+<head>
+    <script type="text/javascript">
+        function okno_zamknij_zebrowski() {
+            window.close()
+        }
+    </script>
+</head>
+
+<body>
+    <h1>kiedy powstała - powstała w 1995r</h1>
+    <h1>dlaczego jest to język skryptowy - ponieważ nie musi zostać skompilowany do kodu maszynowego, aby można było zobaczyć efekty jego działania</h1>
+    <h1>gdzie jest wykonywany JS (kliet lub serwer) - java script wykonywanyjest w kliencie</h1>
+    <h1>dlaczego jest to bezpieczne narzędzie - ponieważ JavaScript ma znacznie ograniczone uprawnienia dostępu do zasobów komputera</h1>
+    <h1>czy jest to język obiektowy , jeśli tak to dlaczego - tak, ponieważ posiada on model dokumentu HTML – czyli DOM</h1>
+<br>
+<br>
+<br>
+<br>
+<ul>Poniżej zamieszczam wszystkie możliwe ustawienia okna:</ul>
+<li>Directories - wartość no : ukrywa przyciski katalogów</li>
+<li>Toolbar - wartość no: ukrywa standardowy pasek narzędzi</li>
+<li>Height - wartość 280: ustawia wysokość okna naq 280</li>
+<li>Width - wartość 160: ustawia szerokość okna na 160</li>
+<li>Top - wartość 200 : ustawia położenie okna względem góry ekranu na 200</li>
+<li>Left - wartość 200: ustawia położenie okna względem lewej strony ekranu na 200</li>
+
+
+
+    <input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen_zebrowski(' ')">
+
+    <img src="obraz1.gif" />
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_zebrowski()" />
+
+</body>
+
+</html>
+        </textarea>
+    </body>
+</html>
