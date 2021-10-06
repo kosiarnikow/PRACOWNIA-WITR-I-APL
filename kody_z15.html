@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            textarea{
+                width: 60%;
+                height: 920px
+            }
+        </style>
+    </head>
+    <body>
+
+
+        <p>kod dotyczący zadania 15</p>
+
+        <textarea>
+            <script language="JavaScript">
+                var x1_zeb = prompt("podaj 1 warość: ");
+                var x2_zeb = prompt("podaj 2 warość: ");
+            
+                var x1 = parseFloat(x1_zeb);
+                var x2 = parseFloat(x2_zeb);
+            
+                var y1 = 3 * Math.pow(x1, (10/(10 + 2)));
+                var y2 = (2 * Math.cos(x1 * Math.PI / 180)) + (2 * Math.sin(x1 * Math.PI / 180));
+                var y3 = Math.cbrt(Math.pow(x1,5) + (2 * Math.pow(x2, 4)));
+                var y4 = Math.abs(x1 - x2);
+                var y5 = y3 * y4;
+                
+                document.write("podane liczby:<br> x1 = "+x1+"<br> x2 = "+x2+ "<br> y1 = "+y1.toFixed(2)+"<br> y2 = "+y2.toFixed(4)+"<br> y3 = "+y3.toFixed(4));
+                  
+                  
+            </script>
+        </textarea>
+
+
+    </body>
+</html>
