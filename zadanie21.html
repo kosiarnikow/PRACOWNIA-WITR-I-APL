@@ -1,0 +1,56 @@
+
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script language="JavaScript">
+
+        function alfa_zebrowski(d_zeb,x_zeb)
+        {
+            d=parseFloat(d_zeb)
+            x=parseFloat(x_zeb)
+            alfa=Math.atan(d/x)*(180/Math.PI)
+            document.getElementsByName('alfa')[0].value=alfa.toFixed(2);
+            alert("alfa="+alfa.toFixed(2));
+            wprowadz_alfa_zeb.innerHTML="alfa=" + alfa.toFixed(2)+"<br>";
+        }
+
+        function drabina_zebrowski(d_zeb, x_zeb)
+        {
+            d=parseFloat(d_zeb)
+            x=parseFloat(x_zeb)
+            drabina=Math.sqrt((d*d) + (x*x))
+            document.getElementsByName('drabina')[0].value=drabina.toFixed(2);
+            alert("drabina="+drabina.toFixed(2) + " cm");
+            wprowadz_drabina_zeb.innerHTML="drabina=" + drabina.toFixed(2);
+        }
+        
+        </script>
+
+    </head>
+    <body>
+
+        <p>obliczanie drabiny i konta alfa z zadania 21</p>
+        <br><br>
+        <form name="formularz" action="..." onsubmit="drabina_zebrowski(this.promien.value,this.wysokosc.value);
+            alfa_zebrowski(this.promien.value,this.wysokosc.value);return false">
+            Podaj d=
+            <input size="6" name="promien">
+            Podaj x=
+            <input size="6" name="wysokosc">
+            <br>
+            <br>
+            <input TYPE="submit" Value="oblicz" >
+            <br>
+            <br>
+            Drabina=
+            <input size="6" name="drabina">
+            Alfa= 
+            <input size="6" name="alfa">
+        </form>
+        <table>
+            <tr id="wprowadz_drabina_zeb"></tr>
+            <tr id="wprowadz_alfa_zeb"></tr>
+        </table>
+    </body>
+</html>

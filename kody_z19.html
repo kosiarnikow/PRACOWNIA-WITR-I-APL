@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            textarea{
+                width: 90%;
+                height: 920px
+            }
+        </style>
+    </head>
+    <body>
+
+
+        <p>kod dotyczący zadania 19</p>
+
+        <textarea>
+            <html>
+                <head>
+                     <meta charset="UTF-8">
+                    <script language="JavaScript">
+                    
+                    function Pole_zeb(a_zeb,b_zeb)
+                    {
+                        a=parseFloat(a_zeb)
+                        b=parseFloat(b_zeb)
+                        pole_wynik=a*b
+                        document.getElementsByName('pole')[0].value=pole_wynik.toFixed(2);
+                        alert("pole="+pole_wynik.toFixed(2));
+                        wprowadz_drabina_zeb.innerHTML="pole="+pole_wynik.toFixed(2)+"<br>";
+                    }   
+            
+                    function obw_zeb(a_zeb,b_zeb)
+                        {
+                        a=parseFloat(a_zeb)
+                        b=parseFloat(b_zeb)
+                        obw_wynik=a*2 + 2*b
+                        document.getElementsByName('obw')[0].value=obw_wynik.toFixed(2);
+                        alert("obwód=" + obw_wynik.toFixed(2));
+                        wprowadz_alfa_zeb.innerHTML="pole=" + obw_wynik.toFixed(2);
+                        }
+            
+                </script>
+                </head>
+            <body>
+                <p>oblczanie pola i dłogosci prostokata</p>
+                <br> <br>
+                    <form name="formularz" action="..." onsubmit="Pole_zeb(this.a_zeb.value,this.b_zeb.value);
+                    obw_zeb(this.a_zeb.value,this.b_zeb.value);return false">
+                    Podaj a=
+                    <input size="6" name="a_zeb">
+                    Podaj b=
+                    <input size="6" name="b_zeb"> 
+                    <br>
+                    <br>
+                    <input TYPE="submit" Value="oblicz">
+                    <br>
+                    <br>
+                    pole=            
+                    <input size="6" name="pole">
+                    obwód=
+                    <input size="6" name="obw">
+                </form>
+                <table>
+            <tr id="wprowadz_drabina_zeb"></tr>
+            <tr id="wprowadz_alfa_zeb"></tr>
+                </table>
+            </body>
+            </html>
+        </textarea>
+
+
+    </body>
+</html>
