@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            textarea{
+                width: 60%;
+                height: 920px
+            }
+        </style>
+ 	<script type="text/javascript">
+ 		function zamknij_okno_zebrowski() {
+ 		window.close()
+ 		}
+ 	</script>
+    </head>
+    <body>
+
+<input type="button" value="zamknij okno" onclick="zamknij_okno_zebrowski()"/>
+<br>
+<br>
+        <p>kod dotyczący zadania 76</p>
+
+        <textarea>
+           
+<html>
+
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <style>
+    </style>
+    <body>
+        <div style="font-size:40px">
+            <script language="JavaScript">
+                var a_zeb = prompt("wypisz pierwszą liczbe: ")
+                var b_zeb = prompt("wypisz drugą liczbe: ")
+                var a2_zeb = parseFloat(a_zeb);
+                var b2_zeb = parseFloat(b_zeb) 
+
+                if(a2_zeb < b2_zeb)
+                {
+                    for (a = a2_zeb; a <= b_zeb; a++) 
+                    {
+                        if (a % 2 == 1){
+                            document.write("<font color='green'>" + a + "<br></font>");
+                        }
+                    }
+                }
+                
+                else {
+                    for (a = a2_zeb; a >= b_zeb; a--) 
+                    {
+                        if (a % 2 == 1){
+                            document.write("<font color = 'blue'>" + a + "<br></font>")
+                        }
+                    }
+                }
+
+                if (a2_zeb == b2_zeb){
+                    var r = confirm("pierwsza i druga liczba mają taką samą wartość")
+                    if (r == true)
+                    document.write("<br>brak obliczen"); 
+                    else 
+                    document.write("<br>brak obliczen");
+                }
+    
+                </script>
+            </div>
+        </body>
+    </html>
+    
+    
+            </script>
+        </div>
+    </body>
+    
+    </html>
+        </textarea>
+
+
+    </body>
+</html>

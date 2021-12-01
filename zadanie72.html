@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+<style>
+</style>
+<body>
+    <div style="font-size:40px">
+        <script language="JavaScript">
+            var l1_t_zeb = prompt("podaj pierwszą liczbe z  przedziału <20,60>: ")
+            var l2_t_zeb = prompt("podaj drugą liczbe z  przedziału <20,60>: ")
+            var pocz_zeb = prompt("podaj wartosc poczatkowa: ")
+            var tekst_zeb = prompt("podaj dowolny tekst:  ")
+
+            if (l2_t_zeb > 19 && l2_t_zeb < 61 && l1_t_zeb > 19 && l1_t_zeb < 61)
+                if (l1_t_zeb < l2_t_zeb){
+                for(a=1; a<=20+pocz_zeb; a++){
+                    document.write("<p style=\"font-size:" + a + "px; color: black;\"><br>" + tekst_zeb + "<br></p>");
+                    }
+                }   
+                else
+                for(a=20; a>=1; a--){
+                    document.write("<p style=\"font-size:" + a + "px; color: black;\"><br>" + tekst_zeb + "<br></p>");
+                }
+            else {
+                document.write("podales zle wartosci")
+            }
+            </script>
+        </div>
+    </body>
+</html>
+
+
+        </script>
+    </div>
+</body>
+
+</html>
