@@ -4,24 +4,29 @@
     <meta charset="utf-8">
 </head>
 <style>
+
 </style>
+
 <body>
     <div style="font-size:40px">
         <script language="JavaScript">
-// w(i) = i*i + i + 41 
-            var x_zeb = prompt("wypisz od jakiej liczby ma sie rozpoczynac i: ")
+            // confirm()
+            confirm()
+            for (i = 1; i <= 39; i++) {
+                w = i * i + i + 41;
+                if (i % 5 == 0) {
+                    document.write("i= " + i + "&nbsp;&nbsp;&nbsp;" + "w(" + i + ")" + w + "<br>")
+                }
+            }
+        </script>
+    </div>
+</body>
 
-                        for (i = x_zeb; i <= x_zeb + 4; i++) {
-                            document.write(i*i + i + 41 + "<br>")
-                        }
-            </script>
-        </div>
-    </body>
 </html>
 
 
-        </script>
-    </div>
+</script>
+</div>
 </body>
 
 </html>
