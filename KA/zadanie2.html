@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="Bartłomiej Żebrowski 2P">
+        <title>zadanie2</title>
+        <script language="JavaScript">
+
+            let celsjusz = () => {
+                let a = parseFloat(temp_celsjusz.value);
+                wynik.innerHTML = 32 + 9/5 * a;
+            }
+
+        </script>
+    </head>
+    <body>
+
+        Liczba 1: <input id="temp_celsjusz"><br><br>
+        <input type="button" value="dodawanie" onclick="celsjusz()">
+
+        <p id="wynik">wynik</p>
+
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="Bartłomiej Żebrowski 2P">
+        <title>zadanie1</title>
+        <script language="JavaScript">
+            let dodawanie =()=> {
+                let a = parseFloat(liczba1.value);
+                let b = parseFloat(liczba2.value);
+                wynik.innerHTML =  a + b;
+            }
+
+            let odejmowanie =()=> {
+                let a = parseFloat(liczba1.value);
+                let b = parseFloat(liczba2.value);
+                wynik.innerHTML = a - b;
+            }
+
+            let mnożenie = () => {
+                let a = parseFloat(liczba1.value);
+                let b = parseFloat(liczba2.value);
+                wynik.innerHTML = a * b;
+            }
+
+            let dzielenie = () => {
+                let a = parseFloat(liczba1.value);
+                let b = parseFloat(liczba2.value);
+                wynik.innerHTML = a / b;
+            }
+
+            let pierwiastkowanie = () => {
+                let a = parseFloat(liczba1.value);
+                let b = parseFloat(liczba2.value);
+                wynik.innerHTML = a ** b;
+            }
+        </script>
+    </head>
+    <body>
+
+        Liczba 1: <input id="liczba1"><br><br>
+        Liczba 2: <input id="liczba2"><br><br>
+        <input type="button" value="dodawanie" onclick="dodawanie()">
+        <input type="button" value="odejmowanie" onclick="odejmowanie()">
+        <input type="button" value="mnożenie" onclick="mnożenie()">
+        <input type="button" value="dzielenie" onclick="dzielenie()">
+        <input type="button" value="pierwiastkowanie" onclick="pierwiastkowanie()">
+        <p id="wynik">wynik</p>
+
+    </body>
+</html>
