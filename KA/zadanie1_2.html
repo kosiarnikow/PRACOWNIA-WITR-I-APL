@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Bartłomiej Żebrowski 2P">
+
+        <script language="JavaScript">
+            const wyswietl = () => {
+                if (rok.value == ""){
+                    alert("pole nie ma być puste");
+                    rok.style = "border:1px red solid";
+                }
+                else{
+                    rok.style = "border: default";
+                }
+            
+
+            const r = parseInt(rok.value);
+            if ((r%4==0 && r%100!=0) || r%400==0){
+                wynik.innerHTML = "Rok przystępny"; 
+            }
+            else{
+                wynik.innerHTML = "Rok zwykły";
+            }
+        }
+        </script>
+    </head>
+    <body>
+
+        Podaj rok <input type =  "number" id="rok">
+
+        <input type = "button" value = "wyswietl" onclick="wyswietl()">
+
+        <p id="wynik"></p>
+    </body>
+</html>

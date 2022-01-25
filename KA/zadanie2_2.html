@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Bartłomiej Żebrowski 2P">
+
+        <style>
+            #wynik {
+                width: 200px;
+                height: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        R<input type="range" min=1 max=255 id="R">
+        <span id="Rvalue"> </span> <br/>
+        G<input type="range" min=1 max=255 id="G">
+        <span id="Gvalue"> </span> <br/>
+        B<input type="range" min=1 max=255 id="B">
+        <span id="Bvalue"> </span> <br/>
+        <p id="wynik"></p>
+    </body>
+    <script language="JavaScript">
+        const zmien=()=> {
+            Rvalue.innerHTML = R.value;
+            Gvalue.innerHTML = G.value;
+            Bvalue.innerHTML = B.value;
+            wynik.style.background="rgb("+R.value+","+G.value+","+B.value+")";
+        }
+        R.addEventListener("change",zmien);
+        G.addEventListener("change",zmien);
+        B.addEventListener("change",zmien);
+    </script>
+    </html>
