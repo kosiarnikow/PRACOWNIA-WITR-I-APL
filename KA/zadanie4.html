@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name = "author" content="Bartłomiej Żebrowski 2p">
+
+    </head>
+    <body>
+        Podaj <input id = "liczba">
+              <select id = "lista">
+                  <option value = "PLNtoEUR">złotówka na euro</option>
+                  <option value = "PLNtoGBP">złotówka na Brytyjski funt szterling</option>
+                  <option value = "PLNtoUSD">złotówka na dolar</option>
+                  <option value = "PLNtoCHF">złotówka na frank szwajcarski</option>
+                  <option value = "CZKtoPLN">Korona czeska na złotówke</option>
+                  <option value = "HKDtoPLN">Dolar Hongkongu na złotówke</option>
+                  <option value = "RUBtoPLN">Rubel na złotówke</option>
+                  <option value = "CNYtoPLN">Renminbi na złotówke</option>
+                  <option value = "TRYtoPLN">Lira turecka na złotówki</option>
+                  <option value = "ZARtoPLN">Rand na złotówki</option>
+                  <option value = "PHPtoPLN">Peso filipińskie na złotówki</option>
+              </select>
+              <input type = "button" value = "przelicz" onclick="przelicz()">
+              <p id = "wynik"></p>
+    </body>
+    <script language="JavaScript">
+        const przelicz=()=> {
+            const wartosc = parseFloat(liczba.value);
+            const wybor = lista.value;
+            if (wybor == "PLNtoEUR"){
+               wynik.innerHTML =  wartosc * 0.22;
+            }
+            if (wybor == "PLNtoGBP"){
+               wynik.innerHTML =  wartosc * 0.18;
+            }
+            if (wybor == "PLNtoUSD"){
+               wynik.innerHTML =  wartosc * 0.25;
+            }
+            if (wybor == "PLNtoCHF"){
+               wynik.innerHTML =  wartosc * 0.23;
+            }
+            if (wybor == "CZKtoPLN"){
+               wynik.innerHTML =  wartosc * 0.19;
+            }
+            if (wybor == "HKDtoPLN"){
+               wynik.innerHTML =  wartosc * 0.52;
+            }
+            if (wybor == "RUBtoPLN"){
+               wynik.innerHTML =  wartosc * 0.05;
+            }
+            if (wybor == "CNYtoPLN"){
+               wynik.innerHTML =  wartosc * 0.64;
+            }
+            if (wybor == "TRYtoPLN"){
+               wynik.innerHTML =  wartosc * 0.30;
+            }
+            if (wybor == "ZARtoPLN"){
+               wynik.innerHTML =  wartosc * 0.27;
+            }
+            if (wybor == "PHPtoPLN"){
+               wynik.innerHTML =  wartosc * 0.08;
+            }
+        }
+    </script>
+</html>
