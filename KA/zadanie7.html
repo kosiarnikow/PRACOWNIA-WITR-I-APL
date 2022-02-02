@@ -1,0 +1,79 @@
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name = "author" content="Bartłomiej Żebrowski 2p">
+
+    </head>
+    <body>
+        <div style="margin: 0 auto; text-align: center; width: 700px; border: 1px solid rgb(0, 162, 255);">
+            <h1>OBLICZANIE DATY WIELKANOCY</h1>
+            Podaj rok <input id="rok"> 
+            <input type="button" value="Oblicz" onclick="oblicz()"> 
+            <p id="wynik"> </p>
+        </div>
+    </body>
+    <script>
+        const oblicz =()=> {
+            const r = parseInt(rok.value);
+            if(r >= 1 && r <= 1582) {
+                x = 15;
+                y = 6;
+            }
+    
+            else if(r >= 1583 && r <= 1699) {
+                x = 22;
+                y = 2;
+            }
+    
+            else if(r >= 1700 && r <= 1799) {
+                x = 23;
+                y = 3;
+            }
+    
+            else if(r >= 1800 && r <= 1899) {
+                x = 23;
+                y = 4;
+            }
+    
+            else if(r >= 1900 && r <= 2099) {
+                x = 24;
+                y = 5;
+            }
+    
+            else if(r >= 2100 && r <= 2199) {
+                x = 24;
+                y = 6;
+            }
+    
+            else {
+                wynik.innerHTML="Nieprawidłowy rok";
+            }
+    
+                a = r % 19; 
+                b = r % 4; 
+                c = r % 7; 
+                d = (( 19 * a) + x) % 30; 
+                f = ((2 * b) + (4 * c) + (6 * d) + y) % 7; 
+            
+            if(f==6 && d==29) {
+              wynik.innerHTML="wielkanoc jest 26 kwietnia";
+            }
+    
+            else if(f == 6 && d == 28 && ((( aa * x ) + 11 ) % 30 < 19 )){
+                wynik.innerHTML="wielkanoc jest 18 kwietnia";
+            }
+    
+            else if((d+f)<10) {
+                data = 22 + d + f;
+                wynik.innerHTML="wielkanoc jest " + data + " marca";
+            }
+    
+            else if((d + f) > 9) {
+                data = d + f - 9;
+                wynik.innerHTML="wielkanoc jest " + data + " kwietnia";
+            }
+        }
+            
+    </script>
+    </html>

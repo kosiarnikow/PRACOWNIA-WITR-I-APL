@@ -1,0 +1,46 @@
+
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name = "author" content="Bartłomiej Żebrowski 2p">
+
+    </head>
+    <body>
+        <input type="button" value="Rzut kostka" onclick="los()">
+        Rzut 1 <p id="rzut1"> </p>
+        Rzut 2 <p id="rzut2"> </p>
+        Wygrana <p id="wynik"> </p>
+    </body>
+    <script>
+        const los =()=> {
+            const p=Math.floor(Math.random()*6)+1;
+            const q=Math.floor(Math.random()*6)+1;
+            rzut1.innerHTML = "<img src=g"+ p +".png width=80 height=80>";
+            rzut2.innerHTML = "<img src=g"+ q +".png width=80 height=80>";
+                if(p%2==0) {
+                    if(q==2 || q==4 || q==5) {
+                        wygrana = p + 3 * q;
+                    }
+                    else {
+                        wygrana = 2 * q;
+                    }
+                }
+    
+                else {
+                    if(q==1 || q==3 || q==6) {
+                        if(p==q) {
+                            wygrana = 5*p+3
+                        }
+                        else {
+                            wygrana = 2*q+p;
+                        }
+                    }
+                 else {
+                    wygrana = Math.min(p,q) + 4;
+                 }
+                }
+                wynik.innerHTML = wygrana;
+        }
+    </script>
+    </html>
