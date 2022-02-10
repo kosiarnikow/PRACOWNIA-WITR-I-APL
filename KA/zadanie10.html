@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name = "author" content = "Bartłomiej Żebrowski 2p">
+    </head>
+    <body>
+        <div style="margin: 0 auto; text-align: center; width: 700px; border: 4px solid rgb(0, 0, 0)">
+            <h2>Ciąg liczb</h2>
+            Pierwsza liczba <input id = "pole1"><br>
+            ilość liczb <input id = "pole2"><br>
+            różnica <input id = "pole3"><br>
+            <input type="button" value="wyświetl" onclick="wyswietl();">
+            <p id = "wynik"></p>
+        </div>
+    </body>
+    <script>
+        const wyswietl =()=> {
+            let m = parseInt(pole1.value);
+            let n = parseInt(pole2.value);
+            let r = parseInt(pole3.value);
+            let temp = "";
+            for (let i = 1; i <= n; i++) {
+               temp += m + ", ";
+               m = m + r; 
+            }
+            wynik.innerHTML = temp;
+        }
+    </script>
+</html> 
