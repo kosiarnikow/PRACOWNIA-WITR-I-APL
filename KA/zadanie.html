@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>zadanie</title>
+</head>
+<style>
+    img{
+        min-height: 100%;
+        min-width: 100%;
+        opacity: 0.6;
+    }
+    h2{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+</style>
+<body>
+    <img src="z1.jpg" id ="image" alt="obraz" />
+    <h2 id="wynik">Pierwszy tekst</h2>
+</body>
+<script>
+    const zmina_zdjecia = ["z1.jpg", "z2.jpg", "z3.png", "z4.jfif"]
+    const zmiana_napisu = ["Pierwszy tekst", "Drugi tekst", "Trzeci tekst", "Czwarty tekst"];
+    let nr_zdjecia = 0;
+
+    const zmiana =()=>{
+        if(nr_zdjecia >= 4){
+            nr_zdjecia = 0;
+        }
+        image.src = zmina_zdjecia[nr_zdjecia];
+        wynik.textContent = zmiana_napisu[nr_zdjecia];
+        nr_zdjecia++;
+    }
+
+    setInterval(zmiana, 1000);
+</script>
+</html>

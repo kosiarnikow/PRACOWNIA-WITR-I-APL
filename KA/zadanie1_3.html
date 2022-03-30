@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>zadanie</title>
+</head>
+<style>
+
+</style>
+<body>
+ <h2>Antybluzgacz</h2>
+ <input type="text" id = "pole"><br>
+ <input type="button" value = "sprawdz" onclick = "sprawdz()">
+<p id="tekst"></p>
+</body>
+<script>
+    const sprawdz =()=>{
+        const zakazaneSlowa = ['Xd','kto pytal', 'wstawac pasterze', 'kys', 'siesiu', 'sabotażysta'];
+        let tekst = pole.value;
+        const wyrReg = new RegExp(zakazaneSlowa.join('|'), "gim");
+        tekst = tekst.replace(wyrReg, "cenzura"); 
+        pole.value = tekst 
+    }
+
+
+</script>
+</html>
