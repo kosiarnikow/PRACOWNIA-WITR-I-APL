@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>zadanie</title>
+</head>
+<style>
+
+</style>
+<body>
+    <input type="text" id="haslo" onkeyup="sprawdz()"><br>
+    siła <br>
+    <p id = "wynik"></p>
+</body>
+<script>
+       const sprawdz=()=>{
+           const pass = haslo.value;
+           if(pass.length >= 7 && /[0-9]/.test(pass)){
+               wynik.style.color = "green";
+               wynik.textContent = "Dobra";
+           }
+           else if(pass.length >= 4 && pass.length  <= 6 && /[0-9]/.test(pass)){
+               wynik.style.color = "yellow";
+               wynik.textContent = "Średnie";
+           }
+           else if(4 > pass.length && /[0-9]/.test(pass)){
+               wynik.style.color = "red";
+               wynik.textContent = "Słabe";
+           }
+       }
+</script>
+</html>

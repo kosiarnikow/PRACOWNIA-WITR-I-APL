@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>zadanie</title>
+</head>
+<style>
+
+</style>
+<body>
+    <fieldset>
+        <b>Dane personalne</b>
+        imie: <input type = "text" id = "pole1"><br><br>
+        nazwisko:<input type = "text" id = "pole2"><br><br>
+        nr telefonu:<input type = "text" id = "pole3"><br><br>
+        kod pocztowy:<input type = "number" id = "pole4"><br><br>
+        <input type = "button" value = "sprawdz" onclick="sprawdz()">
+        <p id = "wynik"></p><br><br>
+</body>
+<script>
+        const sprawdz =()=>{
+            const imie = pole1.value;                               // ogarnianie imienia
+            const imieRe = /^[A-ZŁŻ]{1}[a-złóąęźżń]{2,}$/
+            if (!imieRe.test(imie)){
+                alert("nieprawidłowe imie")
+            }
+            const nazwisko = pole2.value;                           // ogarnianie nazwiska
+            const nazwiskoRe = /^[A-ZŁŻ]{1}[a-złóąęźżń]{2,}$/
+            if (!nazwiskoRe.test(nazwisko)){
+                alert("nieprawidłowe nazwisko")
+            }
+            const telefon = pole3.value;
+            const telefonRe = /^\+[0-9]{2}\/[0-9]{3}\)[0-9]{6}$/;
+            if (!telefonRe.test(telefon)){
+                alert("nieprawidłowy telefon")
+            }
+        }
+</script>
+</html>
