@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <section id="l1">
+    <div id="l1">
         <h2>W ofercie</h2>
           <ul>
               <li> <a href="twarz.html">Zabiegi na twarz</a>
@@ -20,11 +20,11 @@
             <li>Diety oczyszczające</li>
           </ul>
           <a href="index.html">Do strony głównej</a>
-    </section>
-    <section id="p1">
+    </div>
+    <div id="p1">
         <h1>Salon kosmetyczny</h1>
-    </section>
-    <section id="p2">
+    </div>
+    <div id="p2">
         <h2> Sprawdź cenę swojej wizyty </h2>
         <input type="checkbox" id="piling"> Piling <br/>
         <input type="checkbox" id="maska"> Maska <br/>
@@ -32,11 +32,13 @@
         <input type="checkbox" id="brwi"> Regulacja brwi <br/>
         <input type="button" value="Sprawdź cenę" onclick="oblicz()"><br/>
         <p id="wynik"></p>
-    </section>
-    <section id="l2">
+    </div>
+    <div id="l2">
         <img src="obraz1.jpg" alt="Kosmetyczka">
-    </section>
-    <footer>Autor: Batłomiej Żebrowski</footer>
+    </div>
+    <div id="s">
+        <footer>Autor: Batłomiej Żebrowski</footer>
+    </div>    
 </body>
   <script>
     const oblicz=()=> {
